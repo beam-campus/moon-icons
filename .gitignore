@@ -26,3 +26,5 @@ moon_icons-*.tar
 /tmp/
 
 /.elixir_ls
+.vscode/
+.history/
