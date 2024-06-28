@@ -11,7 +11,7 @@ defmodule MoonIcons.MixProject do
       app: :moon_icons,
       description: "Icons used in Moon Design system - both aka-components and svg files",
       version: @version,
-      elixir: "~> 1.18.0-dev",
+      elixir: "~> 1.18.0-",
       package: package(),
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,

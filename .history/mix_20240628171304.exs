@@ -11,7 +11,7 @@ defmodule MoonIcons.MixProject do
       app: :moon_icons,
       description: "Icons used in Moon Design system - both aka-components and svg files",
       version: @version,
-      elixir: "~> 1.18.0-dev",
+      elixir: "~> 1.15",
       package: package(),
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
@@ -41,7 +41,7 @@ defmodule MoonIcons.MixProject do
   defp deps do
     [
       {:surface, git: "git@github.com:beam-campus/surface.git"},
-      {:surface_formatter, git: "git@github.com:beam-campus/surface_formatter.git", only: [:dev, :test], runtime: false},
+      {:surface_formatter, "~> 0.7.0", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
